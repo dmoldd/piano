@@ -1,0 +1,326 @@
+html {
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+}
+
+abbr[title] {
+  border-bottom: none;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  outline-offset: -2px;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page__body {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link:hover {
+  color: orange;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.wrapper {
+  box-shadow: 10px 0 19px -17px #000000, -10px 0 19px -17px #000000;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+}
+
+.will-be {
+  margin: 20px 0 20px 0;
+}
+
+.will-be .container {
+  min-height: 300px;
+  position: relative;
+  border: 4px dashed #5b8ccb;
+}
+
+.will-be-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #5b8ccb;
+}
+
+.maincontent {
+  display: flex;
+  flex-direction: column;
+}
+
+.piano .container {
+  background-color: #807979;
+  height: 500px;
+  width: 600px;
+  margin: 50px auto 0;
+  position: relative;
+}
+
+.piano__title {
+  color: blue;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.piano__notes {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.piano__note-item {
+  background-color: white;
+  border: 3px black solid;
+  height: 250px;
+  width: 40px;
+  writing-mode: vertical-lr;
+  text-align: right;
+  padding: 0 0 20px 0;
+  cursor: default;
+}
+.piano__note-item:hover {
+  border: 3px solid blue;
+  color: blue;
+}
+.piano__note-item:active {
+  border: 3px solid red;
+  color: red;
+}
+
+.piano__note-item--dur {
+  position: absolute;
+  width: 30px;
+  color: white;
+}
+.piano__note-item--dur:nth-child(2), .piano__note-item--dur:nth-child(4), .piano__note-item--dur:nth-child(7), .piano__note-item--dur:nth-child(9), .piano__note-item--dur:nth-child(11) {
+  background-color: black;
+  height: 190px;
+  left: 24px;
+}
+.piano__note-item--dur:nth-child(4) {
+  left: 63px;
+}
+.piano__note-item--dur:nth-child(7) {
+  left: 145px;
+}
+.piano__note-item--dur:nth-child(9) {
+  left: 185px;
+}
+.piano__note-item--dur:nth-child(11) {
+  left: 225px;
+}
+
+.piano__table {
+  position: absolute;
+  top: 107px;
+  left: 318px;
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
